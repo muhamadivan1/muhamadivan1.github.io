@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="About Me.html" target="_blank">About Me</a>
+                </li>
+                <li>
+                    <a href="login.html" target="_blank">Login</a>
+                </li>
+                <li>
+                    <a href="index.html" target="_blank">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Muhamad Ivan Fadilah</h1>
+        <p>Saya adalah mahasiswa jurusan Sistem Informasi dari Telkom University. Saya tertarik dengan Fullstack Software Development, terutama Web. Familiar dengan HTML, CSS, python, dan basic Java. Saat ini masih belajar tentang Javascript dengan salah satu library-nya, yaitu React JS.</p>
+    </header>
+    <div id="content">
+        <h2>My Experience</h2>
+        <p class="content-description">Berikut adalah beberapa organisasi yang saya ikuti</p>
+    </div>
+    <div class="card-content">
+        <div class="image-content">
+            <img src="images/esd.jpg" alt="ini gambar">
+        </div>
+        <div class="text-content">
+            <h3>ESD Laboratory</h3>
+            <p>Laboratorium Enterprise System Development adalah laboratorium riset yang berada dibawah naungan KK EISD (Enterprise Inteligence System Development) yang lebih berfokus pada pengembangan aplikasi dan perangkat lunak. Lab Riset ini memiliki 3 Study Group, yaitu Software Development, UI/UX Design, dan Technopreneur.</p>
+            <p>Saya sendiri di Lab ESD ini mengikuti Study Group Software Development, karena saya tertarik dengan Full-Stack Software Development terutama Web.</p>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="image-content">
+            <img src="images/ede.jpg" alt="ini gambar">
+        </div>
+        <div class="text-content">
+            <h3>EDE Laboratory</h3>
+            <p>EDE Laboratory yaitu bahwa EDE Laboratory adalah lab riset yang berada di bawah kompetensi keahlian Cybernetics, jurusan Sistem Informasi, Fakultas Rekayasa Industri, Telkom University. Lab riset ini tempat yang tepat bagi mahasiswa yang memiliki passion tentang komputer dan teknologi, terutama di bidang Data Science dan Data Engineering.</p>
+            <p>Saya sendiri di Lab EDE ini tergabung di Study Group Data Sciene.</p>
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="image-content">
+            <img src="images/cci.jpg" alt="ini gambar">
+        </div>
+        <div class="text-content">
+            <h3>Central Computer Improvement (CCI)</h3>
+            <p>CCI adalah UKM bidang Penalaran yang ada di Universitas Telkom. CCI ini terdapat 6 divisi, yaitu Data Research, Web Development, Design, Network, Media Management, dan Games and Gadget.</p>
+            <p>Dan saya di CCI ini tergabung di divisi Web Development, dan sekarang masih belajar tentang Front-End Web Development.</p>
+        </div>
+    </div>
+    <footer>
+        <p>My Contact</p><br>
+        <a href="https://www.instagram.com/muhamadivanf_/" target="blank_">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/muhamad.ivan.31542/" target="blank_">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/muhamadivan1" target="blank_">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a><br>
+        <br><br><p>© 2020 DevLearn • All rights reserved • Made by Muhamad Ivan Fadilah</p>
+    </footer>
+    <button class="theme-button" onclick="darkModeHandler(this)">
+        Dark Mode
+    </button>
+    <script>
+        let darkModeStatus = false;
+
+        darkModeHandler = (element) => {
+            const body = document.body;
+            const header = document.getElementsByTagName('header')[0];
+            const footer = document.getElementsByTagName('footer')[0];
+            
+            header.classList.toggle('dark-theme');
+            body.classList.toggle('dark-theme');
+            footer.classList.toggle('dark-theme');
+            darkModeStatus = !darkModeStatus
+            element.innerHTML = 'Light Mode';
+            if(darkModeStatus){
+                element.innerHTML = 'Light Mode';
+            } else{
+                element.innerHTML = 'Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
